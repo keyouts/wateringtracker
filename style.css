@@ -39,10 +39,28 @@
       cursor: pointer;
     }
 
-    button:hover {
-      background: black;
-      color: white;
-    }
+  button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 3px solid black;
+  background: white;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 black;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+
 
     .calendar {
       display: grid;
