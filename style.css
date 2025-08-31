@@ -1,4 +1,4 @@
-   body {
+ body {
       font-family: 'Courier New', monospace;
       background: #fff;
       color: #000;
@@ -29,7 +29,7 @@
       flex-wrap: wrap;
     }
 
-    input, button, select {
+    input, select {
       padding: 10px;
       font-weight: bold;
       border: 3px solid black;
@@ -39,28 +39,26 @@
       cursor: pointer;
     }
 
-  button {
-  padding: 10px 20px;
-  font-weight: bold;
-  border: 3px solid black;
-  background: white;
-  cursor: pointer;
-  box-shadow: 4px 4px 0 black;
-  text-transform: uppercase;
-  transition: all 0.1s ease;
-}
+    button {
+      padding: 10px 20px;
+      font-weight: bold;
+      border: 3px solid black;
+      background: white;
+      cursor: pointer;
+      box-shadow: 4px 4px 0 black;
+      text-transform: uppercase;
+      transition: all 0.1s ease;
+    }
 
-button:hover {
-  background: black;
-  color: white;
-}
+    button:hover {
+      background: black;
+      color: white;
+    }
 
-button:active {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 black;
-}
-
-
+    button:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 black;
+    }
 
     .calendar {
       display: grid;
