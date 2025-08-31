@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watering Tracker</title>
+         <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Watering Tracker</h1>
+
+    <div class="controls">
+      <input type="text" id="plantName" placeholder="Plant name">
+      <select id="schedule">
+        <option value="daily">Daily</option>
+        <option value="every-2-days">Every 2 Days</option>
+        <option value="weekly">Weekly</option>
+      </select>
+      <button onclick="addPlant()">Add Plant</button>
+    </div>
+
+    <div class="controls">
+      <select id="plantSelector" onchange="loadPlant()"></select>
+      <button onclick="deletePlant()">Delete Plant</button>
+      <button onclick="renderCalendar()">Refresh Calendar</button>
+    </div>
+
+    <div class="plant-header" id="plantTitle"></div>
+    <div class="calendar" id="calendar"></div>
+  </div>
+  <script src="./script.js"></script>
+
+</body>
+</html>
+
+
