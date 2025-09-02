@@ -3,25 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Watering Tracker</title>
-         <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="container">
     <h1>Watering Tracker</h1>
 
     <div class="controls">
+      <span role="note" aria-hidden="false" class="aria-text">Enter the name of the plant you want to track.</span>
       <input type="text" id="plantName" placeholder="Plant name">
+
+      <span role="note" aria-hidden="false" class="aria-text">Select how often this plant needs watering.</span>
       <select id="schedule">
         <option value="daily">Daily</option>
         <option value="every-2-days">Every 2 Days</option>
         <option value="weekly">Weekly</option>
       </select>
+
+      <span role="note" aria-hidden="false" class="aria-text">Click to add the plant to your watering schedule.</span>
       <button onclick="addPlant()">Add Plant</button>
     </div>
 
     <div class="controls">
+      <span role="note" aria-hidden="false" class="aria-text">Choose a plant to view or edit its schedule.</span>
       <select id="plantSelector" onchange="loadPlant()"></select>
+
+      <span role="note" aria-hidden="false" class="aria-text">Click to remove the selected plant from your list.</span>
       <button onclick="deletePlant()">Delete Plant</button>
+
+      <span role="note" aria-hidden="false" class="aria-text">Click to refresh the calendar view.</span>
       <button onclick="renderCalendar()">Refresh Calendar</button>
     </div>
 
@@ -29,7 +39,6 @@
     <div class="calendar" id="calendar"></div>
   </div>
   <script src="./script.js"></script>
-
 </body>
 </html>
 
